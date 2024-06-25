@@ -11,7 +11,7 @@ import { ArticleListComponent } from './article-list/article-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ArticleNewTemplateComponent } from './article-new-template/article-new-template.component';
 import { ArticleNewReactiveComponent } from './article-new-reactive/article-new-reactive.component';
-import { ArticleService } from './Services/article-service/article-service.service';
+import { ArticleService } from './services/article-service.service';
 import { PriceArticleFormat } from './Pipes/price-article-format.pipe';
 import { DefaultImageArticle } from './Pipes/default-image-article.pipe';
 import { LoginComponent } from './login/login.component';
