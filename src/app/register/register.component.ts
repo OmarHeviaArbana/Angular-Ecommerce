@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators} from '@angular/forms'
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-register',
@@ -6,5 +8,33 @@ import { Component } from '@angular/core';
   styleUrl: './register.component.css'
 })
 export class RegisterComponent {
+
+  registerForm: FormGroup;
+
+  constructor(private fb: FormBuilder, private authService: AuthService) {
+    this.registerForm = this.fb.group({
+      userName:['', [Validators.required]],
+      password: ['', [Validators.required]]
+    })
+  }
+
+  get userName() {
+    return this.registerForm.get('userName')
+  }
+
+  get password() {
+    return this.registerForm.get('password')
+  }
+
+  registerUser() {
+    if (this.registerForm.valid) {
+      this.authService.authRegister(this.registerForm.value).subscribe(user => {
+        console.log('register working', user);
+      })
+    } else {
+      console.log('invalid form');
+    }
+  }
+
 
 }

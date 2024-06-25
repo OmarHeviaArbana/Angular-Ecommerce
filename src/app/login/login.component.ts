@@ -28,19 +28,11 @@ export class LoginComponent {
 
   loginUser() {
     if (this.loginForm.valid) {
-      this.authService.auth(this.loginForm.value).subscribe(login => {
+      this.authService.authLogin(this.loginForm.value).subscribe(login => {
         console.log('login working', login);
-
-
       })
-
-
     } else {
-      alert
       console.log('invalid form');
-
     }
   }
-
-
 }
