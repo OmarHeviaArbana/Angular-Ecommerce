@@ -14,6 +14,9 @@ import { ArticleNewReactiveComponent } from './article-new-reactive/article-new-
 import { ArticleService } from './Services/article-service/article-service.service';
 import { PriceArticleFormat } from './Pipes/price-article-format.pipe';
 import { DefaultImageArticle } from './Pipes/default-image-article.pipe';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { DefaultImageArticle } from './Pipes/default-image-article.pipe';
     ArticleNewTemplateComponent,
     ArticleNewReactiveComponent,
     PriceArticleFormat,
-    DefaultImageArticle
+    DefaultImageArticle,
+    LoginComponent,
+    RegisterComponent,
+    ArticleDetailComponent
   ],
   imports: [
     BrowserModule,
