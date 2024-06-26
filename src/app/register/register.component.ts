@@ -18,18 +18,24 @@ export class RegisterComponent {
     })
   }
 
-  get userName() {
+  get userName(): any | null {
     return this.registerForm.get('userName')
   }
 
-  get password() {
+  get password(): any | null{
     return this.registerForm.get('password')
   }
 
-  registerUser() {
+  registerUser() : void {
     if (this.registerForm.valid) {
-      this.authService.authRegister(this.registerForm.value).subscribe(user => {
-        console.log('register working', user);
+      this.authService.authRegister(this.registerForm.value).subscribe( {
+        next: (response) => {
+          alert(response)
+          console.log('Loged User', response);
+        },
+        error: (error) => {
+          alert((error.error.msg))
+        }
       })
     } else {
       console.log('invalid form');
