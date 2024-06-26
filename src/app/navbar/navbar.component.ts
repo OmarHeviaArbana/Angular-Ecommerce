@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthStoreService } from '../services/auth-store.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  articleList: boolean = true;
+
+  constructor(public authStoreService: AuthStoreService) {}
+  /* articleList: boolean = true;
   articleNewTemplate: boolean = false;
    articleNewReactive: boolean = false;
 
@@ -22,6 +25,6 @@ export class NavbarComponent {
     }else if (component === 'articleNewReactive') {
       this.articleNewReactive = true;
     }
-  }
+  } */
 
 }

@@ -1,28 +1,12 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-center">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" (click)="showComponent('articleList')">Angular Ecommerce</a>
+    <a class="navbar-brand"  routerLink="/article/list">Angular Ecommerce</a>
       <div class="navbar-nav">
-        <a class="nav-link" [ngClass]= "{ 'active': articleList}"  href="#" (click)="showComponent('articleList')">Inicio</a>
-        <a class="nav-link" [ngClass]= "{ 'active': articleList}" href="#" (click)="showComponent('articleList')">Artículos</a>
-        <a class="nav-link" [ngClass]= "{ 'active': articleNewTemplate}" href="#" (click)="showComponent('articleNewTemplate')">Nuevo artículo template</a>
-        <a class="nav-link" [ngClass]= "{ 'active': articleNewReactive}" href="#" (click)="showComponent('articleNewReactive')">Nuevo artículo reactivo</a>
+        <a class="nav-link" [routerLinkActive]="['active']" routerLink="/login">Login</a>
+        <a class="nav-link" [routerLinkActive]="['active']" routerLink="/register">Register</a>
+        <a class="nav-link" [routerLinkActive]="['active']" routerLink="/article/list">Article List</a>
+        <a class="nav-link" *ngIf="authStoreService.isAuth()" [routerLinkActive]="['active']" routerLink="/article/create">Create Article</a>
       </div>
   </div>
 </nav>
-
-<div *ngIf="articleList">
-  <app-article-list></app-article-list>
-</div>
-
- <div *ngIf="articleNewTemplate">
-  <app-article-new-template></app-article-new-template>
-</div>
-
-<div *ngIf="articleNewReactive">
-  <app-article-new-reactive></app-article-new-reactive>
-</div>
-
-<app-login></app-login>
-
-<app-register></app-register>
-
+<router-outlet></router-outlet>
