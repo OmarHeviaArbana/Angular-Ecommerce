@@ -1,0 +1,50 @@
+
+<!-- <div class="card mb-3" >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img [src]="article.imageUrl | defaultImageArticle" alt="{{article.name}}" class="img-fluid rounded-start">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ article.name | uppercase }}</h5>
+
+        <p class="card-text" [ngClass]= "{ 'price-onSale': !article.isOnSale}">Precio: {{ article.price | priceArticleFormat }}</p>
+        <p  class="card-text" *ngIf="article.isOnSale">Unidades: {{ article.quantityInCart }}</p>
+        <input *ngIf="article.isOnSale" type="number" [(ngModel)]="article.quantityInCart" min="0" (change)="quantityChange(article.quantityInCart)" />
+
+
+      </div>
+      <div *ngIf="article.isOnSale" class="rowBtns">
+        <button (click)="removeArticleUnit(article.quantityInCart)" [disabled]="article.quantityInCart === 0">-</button>
+        <button (click)="addArticleUnit(article.quantityInCart)">+</button>
+      </div>
+      <div *ngIf="!article.isOnSale" class="rowBtns">
+        <p>Articulo no disponible</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="card mb-3" >
+
+    <div class="imgContainer">
+      <img  [src]="article.imageUrl | defaultImageArticle" alt="{{article.name}}" class="img-fluid ">
+      <div class="">
+        <div class="info-body">
+          <h3 class="card-title">{{ article.name | uppercase }}</h3>
+          <h5 class="card-text" [ngClass]= "{ 'price-onSale': !article.isOnSale}">Precio: {{ article.price | priceArticleFormat }}</h5>
+          <p  class="card-text" *ngIf="article.isOnSale">Unidades: {{ article.quantityInCart }}</p>
+          <input *ngIf="article.isOnSale" type="number" [(ngModel)]="article.quantityInCart" min="0" (change)="quantityChange(article.quantityInCart)" />
+          <div *ngIf="article.isOnSale" class="rowBtns">
+            <button  type="button" class="btn btn-primary" (click)="removeArticleUnit(article.quantityInCart)" [disabled]="article.quantityInCart === 0">-</button>
+            <button type="button" class="btn btn-primary" (click)="addArticleUnit(article.quantityInCart)">+</button>
+          </div>
+          <div *ngIf="!article.isOnSale" class="rowBtns">
+            <p>Articulo no disponible</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>

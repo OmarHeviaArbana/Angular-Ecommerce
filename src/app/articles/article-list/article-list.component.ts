@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Article, ArticleQuantityChange  } from '../article-item/article.model';
-import { ArticleService } from '../services/article-service.service'
+import { Article, ArticleQuantityChange  } from './../../models/article.model';
+import { ArticleService } from './../../services/article-service.service'
 import {  distinctUntilChanged, startWith,debounceTime, switchMap, share } from 'rxjs/operators';
 import { Observable, Subject, of} from 'rxjs';
 
@@ -14,7 +14,8 @@ import { Observable, Subject, of} from 'rxjs';
             name="searchBox"
             [(ngModel)]="searchString"
             placeholder="Buscador de artículos"
-            (keyup)="search()">
+            (keyup)="search()"
+            >
     </div>
     <div class="container">
       <app-article-item

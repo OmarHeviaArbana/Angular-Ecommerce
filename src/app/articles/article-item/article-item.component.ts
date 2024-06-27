@@ -1,6 +1,6 @@
 import { Component, Input , Output, EventEmitter } from '@angular/core';
-import { Article } from './article.model';
-import { ArticleQuantityChange } from './article.model';
+import { Article,  ArticleQuantityChange  } from './../../models/article.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-article-item',
@@ -14,6 +14,8 @@ export class ArticleItemComponent {
   @Output() articleQuantityChange = new EventEmitter<ArticleQuantityChange>();
   @Output() addArticle = new EventEmitter<ArticleQuantityChange>();
   @Output() removeArticle = new EventEmitter<ArticleQuantityChange>();
+
+  constructor(private router: Router) {}
 
   articleQuantity: number = 0;
       quantityChange(quantity: number): void {
@@ -39,6 +41,10 @@ export class ArticleItemComponent {
         };
 
         this.addArticle.emit(quantityChange);
+      }
+
+      goToArticleDetail(): void {
+        this.router.navigate(['/article', this.article.id]);
       }
 
 

@@ -4,6 +4,17 @@
  font-weight: 700;
 }
 
+.nav-link.active {
+  color: #2a2e57;
+  font-weight: 600;
+}
+
+.login {
+  color: #2a2e57;
+}
+ .logout {
+  color: #9a263b;
+}
 @media only screen and (max-width: 992px) {
   .container-fluid {
   justify-content: center;
@@ -15,6 +26,7 @@
     gap:20px;
     justify-content: center;
     margin: 0 auto;
+    margin-right: 0;
   }
 }
 

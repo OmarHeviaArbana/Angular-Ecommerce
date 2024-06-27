@@ -2,10 +2,11 @@
   <div class="container-fluid">
     <a class="navbar-brand"  routerLink="/article/list">Angular Ecommerce</a>
       <div class="navbar-nav">
-        <a class="nav-link" [routerLinkActive]="['active']" routerLink="/login">Login</a>
+        <a class="nav-link login" *ngIf="!authStoreService.isAuth()" [routerLinkActive]="['active']" routerLink="/login">Login</a>
         <a class="nav-link" [routerLinkActive]="['active']" routerLink="/register">Register</a>
         <a class="nav-link" [routerLinkActive]="['active']" routerLink="/article/list">Article List</a>
         <a class="nav-link" *ngIf="authStoreService.isAuth()" [routerLinkActive]="['active']" routerLink="/article/create">Create Article</a>
+        <a class="nav-link logout" href="#" (click)="logOut()" *ngIf="authStoreService.isAuth()">Logout</a>
       </div>
   </div>
 </nav>

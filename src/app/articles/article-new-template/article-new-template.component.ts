@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { Article } from './article-new-template.model';
+import { Article } from '../../models/article-new-template.model';
 
 
 @Component({

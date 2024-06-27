@@ -9,6 +9,10 @@ import { AuthStoreService } from '../services/auth-store.service';
 export class NavbarComponent {
 
   constructor(public authStoreService: AuthStoreService) {}
+
+  logOut(): void {
+    this.authStoreService.logOut();
+  }
   /* articleList: boolean = true;
   articleNewTemplate: boolean = false;
    articleNewReactive: boolean = false;

@@ -18,6 +18,10 @@ export class AuthStoreService {
   isAuth(): boolean {
     return this.getToken() !== null;
   }
+
+  logOut(): void {
+    localStorage.removeItem('authToken');
+  }
 }
 
 

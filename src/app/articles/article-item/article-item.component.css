@@ -18,12 +18,11 @@
   height: auto;
   margin: auto;
   padding: 20px;
+  cursor: pointer;
 }
 .article-onSale {
   box-shadow: rgb(61, 61, 229) 0px -2px 50px 0px;
- opacity: 100%;
-
-
+  opacity: 100%;
 }
 
 div div:nth-child(1) {

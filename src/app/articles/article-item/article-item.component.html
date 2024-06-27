@@ -1,7 +1,7 @@
 
   <div class="article-container" [ngClass]= "{ 'article-onSale': article.isOnSale}" >
     <div>
-      <img [src]="article.imageUrl | defaultImageArticle" alt="Imagen del artículo" class="article-image">
+      <img [src]="article.imageUrl | defaultImageArticle" (click)="goToArticleDetail()" alt="{{article.name}}" class="article-image" >
       <h2>{{ article.name | uppercase }}</h2>
       <p [ngClass]= "{ 'price-onSale': !article.isOnSale}">Precio: {{ article.price | priceArticleFormat }}</p>
       <p *ngIf="article.isOnSale">Unidades: {{ article.quantityInCart }}</p>
@@ -9,8 +9,8 @@
     </div>
 
     <div *ngIf="article.isOnSale" class="rowBtns">
-      <button (click)="removeArticleUnit(article.quantityInCart)" [disabled]="article.quantityInCart === 0">-</button>
-      <button (click)="addArticleUnit(article.quantityInCart)">+</button>
+      <button type="button" class="btn btn-primary" (click)="removeArticleUnit(article.quantityInCart)" [disabled]="article.quantityInCart === 0">-</button>
+      <button type="button" class="btn btn-primary" (click)="addArticleUnit(article.quantityInCart)">+</button>
     </div>
     <div *ngIf="!article.isOnSale" class="rowBtns">
       <p>Articulo no disponible</p>
