@@ -8,3 +8,9 @@ body {
 h1, h2, p{
   font-family: "Montserrat", sans-serif;
 }
+
+.btn-primary, .btn-primary:disabled {
+  background-color: #2a2e57;
+  border-color: #2a2e57;
+}
+

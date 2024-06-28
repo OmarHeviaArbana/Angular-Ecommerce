@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable, tap } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { Login } from '../login/login.model';
-import { User } from '../register/user.model';
-import { AuthStoreService } from './auth-store.service';
+import { Login } from '../models/login.model';
+import { User } from '../components/register/user.model';
+import { AuthStoreService } from './../../shared/services/auth-store.service';
 
 @Injectable({
   providedIn: 'root'

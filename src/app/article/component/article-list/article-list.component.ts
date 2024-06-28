@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Article, ArticleQuantityChange  } from './../../models/article.model';
-import { ArticleService } from './../../services/article-service.service'
+import { Article, ArticleQuantityChange  } from '../../models/article.model';
+import { ArticleService } from '../../../article/services/article-service.service'
 import {  distinctUntilChanged, startWith,debounceTime, switchMap, share } from 'rxjs/operators';
 import { Observable, Subject, of} from 'rxjs';
 
