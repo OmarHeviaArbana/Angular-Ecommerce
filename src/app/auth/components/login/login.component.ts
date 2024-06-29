@@ -33,13 +33,11 @@ export class LoginComponent {
         this.authService.authLogin(this.loginForm.value).subscribe({
           next: (response) => {
           if (response) {
-
             this.router.navigate(['/article/list']);
           }
-
           },
-        error: (error) => {
-          alert((error.error.msg))
+          error: (error) => {
+            alert((error.error.msg))
         }
       });
     } else {

@@ -8,7 +8,7 @@ import { AuthGuard } from '../shared/guards/auth.guard';
 const routes: Routes = [
   { path: 'article/list', component: ArticleListComponent },
   { path: 'article/:id', component: ArticleDetailComponent },
-  { path: 'article/create', component: ArticleNewReactiveComponent, canActivate: [AuthGuard] }
+  { path: 'auth/article/create', component: ArticleNewReactiveComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({

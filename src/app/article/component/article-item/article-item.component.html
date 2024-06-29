@@ -9,8 +9,8 @@
     </div>
 
     <div *ngIf="article.isOnSale" class="rowBtns">
-      <button type="button" class="btn btn-primary" (click)="removeArticleUnit(article.quantityInCart)" [disabled]="article.quantityInCart === 0">-</button>
-      <button type="button" class="btn btn-primary" (click)="addArticleUnit(article.quantityInCart)">+</button>
+      <button type="button" class="btn btn-primary" (click)="removeArticleUnit(article.quantityInCart)" [disabled]="article.quantityInCart === 0"><i class="bi bi-dash-lg"></i></button>
+      <button type="button" class="btn btn-primary" (click)="addArticleUnit(article.quantityInCart)"><i class="bi bi-plus"></i></button>
     </div>
     <div *ngIf="!article.isOnSale" class="rowBtns">
       <p>Articulo no disponible</p>

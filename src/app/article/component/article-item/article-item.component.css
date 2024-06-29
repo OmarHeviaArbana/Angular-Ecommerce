@@ -46,28 +46,24 @@ div h2 {
   margin-top: 20px;
   font-size: 1.4rem;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
 }
 div div p:nth-child(3) {
   margin-top: 0;
   font-size: 1.3rem;
-  font-weight: 500;
-  color: rgb(71, 69, 69);
+  font-weight: 600;
+  color:#2a2e57;
 }
 div div p:nth-child(4) {
   margin-top: 0;
   font-size: 0.9rem;
-  color: rgb(61, 61, 229);
+
 }
 button {
   width: 40px;
   height: 40px;
   padding: 10px;
   font-size: 1rem;
-}
-
-.price-onSale {
-  color: rgb(128, 128, 128, 0.4);
 }
 
 input {

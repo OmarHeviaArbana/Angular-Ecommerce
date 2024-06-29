@@ -1,8 +1,6 @@
 .card {
   border-radius: 0;
   height: 100vh;
-
-
 }
 
 body {
@@ -22,6 +20,24 @@ padding:30px 30px
 
 }
 
+div h2 {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 600;
+}
+div div p:nth-child(2) {
+  margin-top: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color:#2a2e57;
+}
+div div p:nth-child(4) {
+  margin-top: 0;
+  font-size: 0.9rem;
+
+}
+
 .info-body {
   display: flex;
   flex-direction: column;
@@ -35,6 +51,11 @@ padding:30px 30px
   gap: 20px;
   justify-content: center;
   flex-direction: row;
+}
+.rowBtns p {
+  color: #dc3545;
+  font-size: 0.9rem;
+
 }
 
 button {

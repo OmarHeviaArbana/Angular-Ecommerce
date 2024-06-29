@@ -8,7 +8,8 @@ import { Observable, Subject, of} from 'rxjs';
   selector: 'app-article-list',
   template: `
   <div>
-    <div>
+    <div class="containerBuscador">
+      <i class="bi bi-search"></i>
       <input
             class="form-control mt-5"
             name="searchBox"
@@ -34,6 +35,20 @@ import { Observable, Subject, of} from 'rxjs';
 
   div {
     margin: 0 5% auto;
+  }
+  .containerBuscador  {
+   position:relative;
+  }
+
+  .bi-search{
+    color: #2a2e57;
+    margin-right: 15px;
+    font-size: 1.3rem;
+    position: absolute;
+    right: 0;
+    padding-top: 2px;
+
+
   }
   div.container {
     display: grid;

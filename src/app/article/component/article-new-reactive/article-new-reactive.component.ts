@@ -38,10 +38,18 @@ export class ArticleNewReactiveComponent {
 
   createArticle() {
     if (this.articleForm.valid) {
-      this.articleService.create(this.articleForm.value).subscribe(article => {
-        console.log('Artículo Creado', article);
+      this.articleService.create(this.articleForm.value).subscribe({
+        next: (response) => {
+          alert(response)
+          console.log("Create Article" + response);
+          this.articleForm.reset()
+          },
+          error: (error) => {
+            alert((error.error.msg))
+        }
       });
     } else {
+      alert("Invalid Form")
       console.log('Formulario inválido');
     }
   }

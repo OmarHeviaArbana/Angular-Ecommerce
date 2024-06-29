@@ -32,12 +32,14 @@ export class RegisterComponent {
         next: (response) => {
           alert(response)
           console.log('Loged User', response);
+          this.registerForm.reset()
         },
         error: (error) => {
           alert((error.error.msg))
         }
       })
     } else {
+      alert("Invalid Form")
       console.log('invalid form');
     }
   }

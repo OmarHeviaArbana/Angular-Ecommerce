@@ -4,25 +4,49 @@ const router = express.Router();
 const articles = [
   {
     id: 1,
-    name: 'Article1',
+    name: 'Macbook Pro 13" - 256GB',
     imageUrl: 'assets/images/article1.jpg',
-    price: 19.95,
+    price: 1999.95,
     isOnSale: false,
     quantityInCart: 0
   },
   {
     id: 2,
-    name: 'Article2',
+    name: 'Macbook Pro 13" - 512GB',
     imageUrl: '',
-    price: 6.15,
+    price: 2350.95,
     isOnSale: true,
     quantityInCart: 0
   },
   {
     id: 3,
-    name: 'Article3',
+    name: 'Macbook Pro 13" - 1TB',
     imageUrl: 'assets/images/article3.jpg',
-    price: 31.9,
+    price: 2999.95,
+    isOnSale: true,
+    quantityInCart: 0
+  },
+  {
+    id: 4,
+    name: 'Macbook Pro 16" - 256GB',
+    imageUrl: 'assets/images/article3.jpg',
+    price: 2599.95,
+    isOnSale: true,
+    quantityInCart: 0
+  },
+  {
+    id: 5,
+    name: 'Macbook Pro 13" - 512GB',
+    imageUrl: 'assets/images/article3.jpg',
+    price: 3209.95,
+    isOnSale: true,
+    quantityInCart: 0
+  },
+  {
+    id: 6,
+    name: 'Macbook Pro 13" - 1T',
+    imageUrl: 'assets/images/article3.jpg',
+    price: 3999.95,
     isOnSale: false,
     quantityInCart: 0
   }

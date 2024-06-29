@@ -1,7 +1,7 @@
 import { ActivatedRoute } from '@angular/router';
 import { ArticleService } from '../../services/article-service.service';
-import { Component, Input , Output, EventEmitter } from '@angular/core';
-import { Article,  ArticleQuantityChange  } from '../../models/article.model';
+import { Component, Output, EventEmitter } from '@angular/core';
+import {  ArticleQuantityChange  } from '../../models/article.model';
 
 @Component({
   selector: 'app-article-detail',
