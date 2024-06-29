@@ -30,7 +30,7 @@ export class RegisterComponent {
     if (this.registerForm.valid) {
       this.authService.authRegister(this.registerForm.value).subscribe( {
         next: (response) => {
-          alert(response)
+          alert("Registered user successfully. Go to login to access.")
           console.log('Loged User', response);
           this.registerForm.reset()
         },

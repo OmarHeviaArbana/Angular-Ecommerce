@@ -40,7 +40,7 @@ export class ArticleNewReactiveComponent {
     if (this.articleForm.valid) {
       this.articleService.create(this.articleForm.value).subscribe({
         next: (response) => {
-          alert(response)
+          alert("Article successfully created and added to the article list")
           console.log("Create Article" + response);
           this.articleForm.reset()
           },
