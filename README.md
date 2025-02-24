@@ -26,6 +26,7 @@ Ecommerce donde se practican el routing, service, teoria de componentes, formula
 
 
 **Autor:** Omar Hevia Arbana
+
 **Fecha:** Mayo 2024
 
 ---
@@ -43,6 +44,7 @@ E-commerce where routing, services, component theory, reactive forms, REST API u
 - Reactive forms for article creation
 
 **Author:** Omar Hevia Arbana
+
 **Date:** May 2024
 
 ---
