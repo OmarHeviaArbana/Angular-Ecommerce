@@ -1,6 +1,58 @@
+# Angular Ecommerce
+
+<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/miniatura_one.png" alt="Angular Ecommerce">
+
+<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/miniatura_two.png" alt="Angular Ecommerce - Detail article">
+
+<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/miniatura_three.png" alt="Angular Ecommerce - Reactive Form">
+
+## Link
+
+
+## Descripción
+
+Ecommerce donde se practican el routing, service, teoria de componentes, formularios reactivos, utilización de una APi REST y directivas de Angular.
+
+## Funcionalidades
+
+- Autenticación, formularios reactivo paralogin y registro de usuarios
+- Listado de artículos con filtro buscador con lazy loading
+- Formularios reactivos para creación de artículos
+
+**Autor:** Omar Hevia Arbana
+**Fecha:** May 2024
+
+---
+
 # AngularEcommerce
 
+## Description
+
+E-commerce where routing, services, component theory, reactive forms, REST API utilization, and Angular directives are practiced.
+
+## Functionalities
+
+- Authentication, reactive forms for login and user registration
+- Article listing with a search filter and lazy loading
+- Reactive forms for article creation
+
+**Author:** Omar Hevia Arbana
+**Date:** May 2024
+
+---
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+
+## Requirements
+
+[Node.js](http://nodejs.org/) >= 18.x
+
+## Getting started
+
+Install and run the server (server-articles) by executing the following:
+
+Go to server-article folder and run `npm i` and `npm start`
 
 ## Development server
 
