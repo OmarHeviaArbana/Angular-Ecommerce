@@ -1,12 +1,5 @@
 # Angular Ecommerce
 
-<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/miniatura_one.png" alt="Angular Ecommerce">
-
-<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/miniatura_two.png" alt="Angular Ecommerce - Detail article">
-
-<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/miniatura_three.png" alt="Angular Ecommerce - Reactive Form">
-
-## Link
 
 
 ## Descripción
@@ -18,9 +11,22 @@ Ecommerce donde se practican el routing, service, teoria de componentes, formula
 - Autenticación, formularios reactivo paralogin y registro de usuarios
 - Listado de artículos con filtro buscador con lazy loading
 - Formularios reactivos para creación de artículos
+  
+<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/miniatura_one.png" alt="Angular Ecommerce">
+
+<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/miniatura_two.png" alt="Angular Ecommerce - Detail article">
+
+<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/miniatura_three.png" alt="Angular Ecommerce - Reactive Create Form">
+
+<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/miniatura_four.png" alt="Angular Ecommerce - Reactive Register Form">
+
+<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/miniatura_five.png" alt="Angular Ecommerce - Reactive auth Form">
+
+<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/lazy_loading.png" alt="Angular Ecommerce - Lazy loading">
+
 
 **Autor:** Omar Hevia Arbana
-**Fecha:** May 2024
+**Fecha:** Mayo 2024
 
 ---
 
